@@ -1,8 +1,11 @@
 from django.shortcuts import render
-from
+
+from webapp.models import QuestBook
+
 
 def index_view(request):
-    products = Quest_book.objects.filter(balance__gt=0).order_by('name', 'category')
+    books = QuestBook.objects.filter(status__startswith='active').order_by('create_time').reverse()
+    # books = QuestBook.objects.all()
     return render(request, 'index.html', context={
-        'products': products
+        'books': books
     })
