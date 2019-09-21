@@ -6,13 +6,13 @@
 
 {% block content %}
     <h1 class="mt-3">Quest Book</h1>
-{#    <form class="inline" action="{% url 'book_search' %}" method="GET">#}
-{#        <input type="text" name="search" value="{{ book.name }}">#}
-{#    <p><input type="submit" value="Search"></p>#}
-{#    </form>#}
+    <form class="search" action="{% url 'search_book' %}" method="GET">
+        <p><input type="text" name="search" value="{{ book.name }}"></p>
+        <p><input type="submit" value="Search"></p>
+    </form>
     <div class="row">
         {% for book in books %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <p class="card-text">{{ book.author_name }} ({{ book.author_mail}})</p>

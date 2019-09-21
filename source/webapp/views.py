@@ -62,3 +62,10 @@ def book_delete_view(request, pk):
     elif request.method == 'POST':
         book.delete()
         return redirect('index')
+
+def book_search(request):
+    value = request.GET.getlist('search')
+    books = QuestBook.objects.filter(author_name__in=value)
+    return render(request, 'index.html', context={
+        'books': books
+    })
