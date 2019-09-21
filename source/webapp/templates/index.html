@@ -18,7 +18,7 @@
                         <p class="card-text">{{ book.author_name }} ({{ book.author_mail}})</p>
                         <p class="card-text">{{ book.text}}</p>
                         <a href="{% url 'update_book' book.pk %}"><i class="fas fa-edit"></i></a>
-                        <a href=""><i class="fas fa-folder-minus"></i></a>
+                        <a href="{% url 'delete_book' book.pk %}"><i class="fas fa-trash-alt"></i></a>
                     </div>
                 </div>
             </div>
