@@ -1,0 +1,80 @@
+[
+{
+  "model": "webapp.quest_book",
+  "pk": 1,
+  "fields": {
+    "author_name": "Azamat",
+    "author_mail": "azamat@gmail.com",
+    "text": "test",
+    "create_time": "2019-09-21T06:12:32.317Z",
+    "edit_time": "2019-09-21T06:12:32.317Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.quest_book",
+  "pk": 2,
+  "fields": {
+    "author_name": "Almaz",
+    "author_mail": "almaz@gmail.com",
+    "text": "Test2",
+    "create_time": "2019-09-21T06:13:48.141Z",
+    "edit_time": "2019-09-21T06:13:48.141Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.quest_book",
+  "pk": 3,
+  "fields": {
+    "author_name": "Ivan",
+    "author_mail": "ivan@gmail.com",
+    "text": "test3",
+    "create_time": "2019-09-21T06:17:18.455Z",
+    "edit_time": "2019-09-21T06:17:18.455Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.quest_book",
+  "pk": 4,
+  "fields": {
+    "author_name": "Masha",
+    "author_mail": "masha@gmail.com",
+    "text": "jksbrvkjsbvsfbvmnsfbvfsnmbvsnvsnmfv fsmnbv sfmnvbsmf",
+    "create_time": "2019-09-21T06:18:49.318Z",
+    "edit_time": "2019-09-21T06:26:49.845Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.quest_book",
+  "pk": 5,
+  "fields": {
+    "author_name": "Aziz",
+    "author_mail": "aziz@gmail.com",
+    "text": "ksdlcndklsnvkdsnvklsdnvs",
+    "create_time": "2019-09-21T06:29:23.278Z",
+    "edit_time": "2019-09-21T06:29:23.278Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$2St3luMQWlBr$hKHSGxV+jQf1RQptdVQs3VAh1r2DgDpsTTNQ9q9ryr4=",
+    "last_login": "2019-09-21T06:04:41.876Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-21T05:24:09.577Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
