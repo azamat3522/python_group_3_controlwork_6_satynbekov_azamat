@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Add{% endblock %}
+
+{% block content %}
+    <h1>Add</h1>
+
+    <form method="POST" action="/book/add/">
+        {% include 'partial/guest_book_form.html' with button_text="Add" %}
+    </form>
+{% endblock %}
