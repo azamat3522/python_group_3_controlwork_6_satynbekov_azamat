@@ -1,5 +1,5 @@
 from django.contrib import admin
-from webapp.models import Quest_Book
+from webapp.models import QuestBook
 
 
-admin.site.register(Quest_Book)
+admin.site.register(QuestBook)
