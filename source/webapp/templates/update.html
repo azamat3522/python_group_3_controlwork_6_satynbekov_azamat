@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit{% endblock %}
+
+{#{% block menu %}#}
+{#    <li><a href="{% url 'index' product.pk %}">View</a></li>#}
+{#{% endblock %}#}
+
+{% block content %}
+    <h1>Update</h1>
+
+    <form method="POST" action="{% url 'update_book' book.pk %}">
+        {% include 'partial/guest_book_form.html' with button_text="Update" %}
+    </form>
+
+{% endblock %}
